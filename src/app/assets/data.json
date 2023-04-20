@@ -1,0 +1,25 @@
+{
+  "user": "Vinícius Fernandes",
+  "userplaylists": [
+    { "name": "Ectastic Rock" },
+    { "name": "Manhã Relax" },
+    { "name": "Oneiri Station: Cinematic Sci-Fi Synthwave" },
+    { "name": "Atmospheric Calm" },
+    { "name": "Sleep Piano Music" },
+    { "name": "Vocal Synthwave Retrowave" },
+    { "name": "Peaceful Guitar" },
+    { "name": "System Of A Down - Discography" },
+    { "name": "Guitar Hero 6 - Warriors of Rock" },
+    { "name": "Ambition's Lofi Hiphop PLlylist" },
+    { "name": "Atmospheric Calm" },
+    { "name": "Acoustic Covers" }
+  ],
+  "playlists": [
+    { "name": "Neon Run", "coverurl": "/capa1.png" },
+    { "name": "Future Cities", "coverurl": "/capa2.png" },
+    { "name": "Overworld", "coverurl": "/capa3.png" },
+    { "name": "Long Road", "coverurl": "/capa4.png" },
+    { "name": "Far Away", "coverurl": "/capa5.png" },
+    { "name": "Distant Days", "coverurl": "/capa6.png" }
+  ]
+}
