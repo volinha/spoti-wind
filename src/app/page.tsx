@@ -1,6 +1,5 @@
 import Image from "next/image";
 import data from "../app/assets/data.json";
-import { useEffect, useState } from "react";
 
 export default function Home() {
   const imgSize = 76;
@@ -15,23 +14,23 @@ export default function Home() {
             <div className='w-1 h-1 bg-zinc-50 rounded-full'></div>
             <div className='w-1 h-1 bg-zinc-50 rounded-full'></div>
           </div>
-          <nav className='space-y-5'>
+          <nav className='space-y-2'>
             <a
               href=''
               className='flex items-center gap-3 text-sm font-semibold text-zinc-400 hover:text-zinc-50 active:text-zinc-50 transition-all'>
-              <span className='material-icons'>home</span>
+              <i className='mdi mdi-home text-2xl'></i>
               Início
             </a>
             <a
               href=''
               className='flex items-center gap-3 text-sm font-semibold text-zinc-400 hover:text-zinc-50 active:text-zinc-50 transition-all'>
-              <span className='material-icons'>search</span>
+              <i className='mdi mdi-magnify text-2xl'></i>
               Buscar
             </a>
             <a
               href=''
               className='flex items-center gap-3 text-sm font-semibold text-zinc-400 hover:text-zinc-50 active:text-zinc-50 transition-all'>
-              <span className='material-icons'>library_books</span>
+              <i className='mdi mdi-library-shelves text-2xl'></i>
               Sua Biblioteca
             </a>
           </nav>
@@ -50,10 +49,10 @@ export default function Home() {
         <main className='flex-1 p-6'>
           <div className='flex items-center gap-3'>
             <button className='bg-black/50 rounded-full w-12 h-12 flex items-center justify-center'>
-              <span className='material-icons'>chevron_left</span>
+              <i className='mdi mdi-chevron-left'></i>
             </button>
             <button className='bg-black/50 rounded-full w-12 h-12 flex items-center justify-center'>
-              <span className='material-icons'>chevron_right</span>
+            <i className='mdi mdi-chevron-right'></i>
             </button>
           </div>
 
@@ -67,26 +66,29 @@ export default function Home() {
                   <Image src={item.coverurl} width={imgSize} height={imgSize} alt='album cover' />
                   <strong>{item.name}</strong>
                   <button className='ml-auto mr-8 p-2 rounded-full bg-green-500 w-8 h-8 flex items-center justify-center invisible group-hover:visible transition-opacity'>
-                    <span className='material-icons text-black'>play_arrow</span>
+                    <i className='mdi mdi-play text-xl text-black'></i>
                   </button>
                 </div>
               );
             })}
           </div>
           <h1 className='font-bold text-2xl mt-10'>Feito para {data.user}</h1>
-          <div className={`grid grid-cols-${numCols} gap-4 mt-4 overflow-x-auto max-h-screen-md`}>
+          <div className={`grid grid-cols-4 gap-4 mt-4`}>
             {data.playlists.map((item, index) => {
-              if (index < numCols) {
+              if (index < 4) {
                 return (
-                  <div key={index} className='bg-white/10 p-2 rounded overflow-hidden'>
+                  <div
+                    key={index}
+                    className='bg-white/10 hover:bg-white/20 flex flex-col gap-2 p-3 rounded cursor-pointer '>
                     <Image
-                      className='w-full'
+                      className='w-full rounded'
                       src={item.coverurl}
                       width={imgSize}
                       height={imgSize}
                       alt='album cover'
                     />
-                    {item.name}
+                    <strong className='font-semibold'>{item.name}</strong>
+                    <span className='text-xs font-light text-zinc-300'>{item.artists} e mais</span>
                   </div>
                 );
               }
@@ -94,7 +96,52 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <footer className='bg-zinc-1040 border-t border-zinc-700 p-6'>footer</footer>
+      <footer className='bg-zinc-1040 border-t border-zinc-700 p-6 flex items-center justify-between'>
+        <div className='flex items-center gap-2'>
+          <Image
+            className='w-full rounded'
+            src={data.playlists[0].coverurl}
+            width={imgSize - 12}
+            height={imgSize}
+            alt='album cover'
+          />
+          <div className='flex flex-col gap-1 text-sm '>
+            <strong className='font-semibold cursor-pointer hover:underline'>Retrofuture</strong>
+            <span className='font-light text-zinc-300 cursor-pointer hover:underline'>
+              Nightwave
+            </span>
+          </div>
+        </div>
+        <div className='flex flex-col items-center gap-2'>
+          <div className="flex items-center text-xl text-zinc-400 gap-10">
+            <i className='mdi mdi-shuffle-variant hover:text-zinc-300'></i>
+            <i className='mdi mdi-step-backward hover:text-zinc-300'></i>
+            <i className='mdi mdi-play-circle text-5xl hover:text-zinc-300 transition-all'></i>
+            <i className='mdi mdi-step-forward hover:text-zinc-300'></i>
+            <i className='mdi mdi-repeat hover:text-zinc-300'></i>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-xs text-zinc-400">0:36</span>
+            <div className="h-1 rounded-full w-96 bg-zinc-600 group">
+              <div className="bg-zinc-200 w-10 h-1 rounded-full group-hover:bg-green-500 flex items-center justify-end">
+                <div className="rounded-full bg-zinc-50 w-3 h-3 invisible group-hover:visible"></div>
+              </div>
+            </div>
+            <span className="text-xs text-zinc-400">3:49</span>
+          </div>
+        </div>
+        <div className="flex items-center gap-3 text-xl text-zinc-400">
+          <i className="mdi mdi-microphone hover:text-zinc-300"></i>
+          <i className="mdi mdi-playlist-music hover:text-zinc-300"></i>
+          <i className="mdi mdi-devices hover:text-zinc-300"></i>
+          <i className="mdi mdi-volume-high hover:text-zinc-300"></i>
+          <div className="h-1 rounded-full w-20 bg-zinc-600 group">
+              <div className="bg-zinc-200 w-8 h-1 rounded-full group-hover:bg-green-500 flex items-center justify-end">
+                <div className="rounded-full bg-zinc-50 w-3 h-3 invisible group-hover:visible"></div>
+              </div>
+            </div>
+        </div>
+      </footer>
     </div>
   );
 }

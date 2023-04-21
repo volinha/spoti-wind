@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdi/font": "^7.2.96",
     "@types/node": "18.15.12",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "10.4.14",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
-    "material-icons": "^1.13.5",
     "next": "13.3.0",
     "postcss": "8.4.23",
     "react": "18.2.0",
