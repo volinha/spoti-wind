@@ -28,7 +28,7 @@ export default function Sidebar({ user }: { user: User }) {
               Sua Biblioteca
             </a>
           </nav>
-          <nav className='mt-10 pt-10 border-t border-zinc-1040'>
+          <nav className='mt-10 pt-10 border-t border-zinc-800'>
             {user.userplaylists.map((item, index) => {
               return (
                 <div
