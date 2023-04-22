@@ -40,7 +40,7 @@ export default function Home() {
                 <div
                   className='text-sm truncate mt-3 text-zinc-400 hover:text-zinc-50 transition-all cursor-default'
                   key={index}>
-                  {item.name}
+                  {item}
                 </div>
               );
             })}
