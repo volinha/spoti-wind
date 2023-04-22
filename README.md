@@ -27,6 +27,10 @@ Para alterar os nomes, basta alterar o arquivo `src/app/assets/data.json` para o
   <img src="public/hover2.png" width="800px"/>
 </p>
 
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img src="public/playlists-hover.gif" width="400px"/>
+</p>
+
 ## Tecnologias
 
 - [NextJS](nextjs.org)
