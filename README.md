@@ -37,9 +37,9 @@ Para alterar os nomes, basta alterar o arquivo `src/app/assets/data.json` para o
 ## Atualizações Futuras
 
 - [ ] Responsividade
-- [ ] Degradê da área principal
-- [ ] Estados de hover em todos elementos
-- [ ] Componentização dos elementos
+- [x] Degradê da área principal
+- [x] Estados de hover em todos elementos
+- [x] Componentização dos elementos
 - [ ] Criação de mais páginas
 
 ## Disclaimer

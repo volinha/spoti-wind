@@ -1,5 +1,4 @@
 {
-  "user": {
     "name": "Ana Silva",
     "profilepic": "/face.png",
     "userplaylists": [
@@ -17,7 +16,11 @@
       "Acoustic Covers"
     ],
     "playlists": [
-      { "name": "Neon Run", "coverurl": "/capa1.png", "artists": "Nightwave, Neon Rebel" },
+      { 
+        "name": "Neon Run", 
+        "coverurl": "/capa1.png", 
+        "artists": "Nightwave, Neon Rebel" 
+      },
       {
         "name": "Future Cities",
         "coverurl": "/capa2.png",
@@ -48,7 +51,7 @@
       "song": "retrofuture",
       "artist": "Nightwave",
       "currentTime": "0:36",
-      "totalTime": "3:49"
+      "totalTime": "3:49",
+      "coverurl": "/capa1.png"
     }
   }
-}
