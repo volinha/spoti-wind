@@ -1,5 +1,6 @@
 {
   "user": "Ana Silva",
+  "profilepic": "/face.png",
   "userplaylists": [
     { "name": "Ectastic Rock" },
     { "name": "Manhã Relax" },
@@ -21,5 +22,11 @@
     { "name": "Long Road", "coverurl": "/capa4.png", "artists": "The Wildwood Travelers, Moonshine Serenade" },
     { "name": "Far Away", "coverurl": "/capa5.png", "artists": "Riverstone Ramblers, Hollow Oak Hymnals"  },
     { "name": "Distant Days", "coverurl": "/capa6.png", "artists": "Hilltop Harvesters, Rustic Roadsides" }
-  ]
+  ],
+  "playing": {
+    "song": "retrofuture",
+    "artist": "Nightwave",
+    "currentTime": "0:36",
+    "totalTime": "3:49"
+  }
 }

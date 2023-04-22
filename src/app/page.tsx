@@ -47,13 +47,23 @@ export default function Home() {
           </nav>
         </aside>
         <main className='flex-1 p-6'>
-          <div className='flex items-center gap-3'>
-            <button className='bg-black/50 rounded-full w-12 h-12 flex items-center justify-center'>
-              <i className='mdi mdi-chevron-left'></i>
-            </button>
-            <button className='bg-black/50 rounded-full w-12 h-12 flex items-center justify-center'>
-              <i className='mdi mdi-chevron-right'></i>
-            </button>
+          <div className='flex items-center gap-3 justify-between'>
+            <div className="flex items-center gap-2">
+              <button className='bg-black/50 rounded-full w-8 h-8 flex items-center justify-center'>
+                <i className='mdi mdi-chevron-left'></i>
+              </button>
+              <button className='bg-black/50 rounded-full w-8 h-8 flex items-center justify-center'>
+                <i className='mdi mdi-chevron-right'></i>
+              </button>
+            </div>
+            <div className="flex gap-3">
+            <button className='bg-black/50 rounded-full w-8 h-8 flex items-center justify-center'>
+                <i className='mdi mdi-account-group'></i>
+              </button>
+              <button className='bg-black/50 rounded-full w-8 h-8 flex items-center justify-center overflow-hidden'>
+                <Image src={data.profilepic} alt={data.user} width={32} height={32} className=''></Image>
+              </button>
+            </div>
           </div>
 
           <h1 className='font-bold text-3xl mt-9'>Boa noite</h1>
@@ -80,7 +90,7 @@ export default function Home() {
                   <div
                     key={index}
                     className='bg-white/10 hover:bg-white/20 group flex flex-col gap-2 p-3 rounded cursor-pointer '>
-                    <div className="relative">
+                    <div className='relative'>
                       <Image
                         className='w-full rounded'
                         src={item.coverurl}
@@ -111,9 +121,9 @@ export default function Home() {
             alt='album cover'
           />
           <div className='flex flex-col gap-1 text-sm '>
-            <strong className='font-semibold cursor-pointer hover:underline'>Retrofuture</strong>
+            <strong className='font-semibold cursor-pointer hover:underline'>{data.playing.song}</strong>
             <span className='font-light text-zinc-300 cursor-pointer hover:underline'>
-              Nightwave
+              {data.playing.artist}
             </span>
           </div>
         </div>
@@ -126,13 +136,13 @@ export default function Home() {
             <i className='mdi mdi-repeat hover:text-zinc-300 transition-all'></i>
           </div>
           <div className='flex items-center gap-2'>
-            <span className='text-xs text-zinc-400'>0:36</span>
+            <span className='text-xs text-zinc-400'>{data.playing.currentTime}</span>
             <div className='h-1 rounded-full w-96 bg-zinc-600 group'>
               <div className='bg-zinc-200 w-10 h-1 rounded-full group-hover:bg-green-500 flex items-center justify-end'>
                 <div className='rounded-full bg-zinc-50 w-3 h-3 invisible group-hover:visible'></div>
               </div>
             </div>
-            <span className='text-xs text-zinc-400'>3:49</span>
+            <span className='text-xs text-zinc-400'>{data.playing.totalTime}</span>
           </div>
         </div>
         <div className='flex items-center gap-3 text-xl text-zinc-400'>
