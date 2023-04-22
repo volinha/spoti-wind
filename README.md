@@ -41,6 +41,7 @@ Para alterar os nomes, basta alterar o arquivo `src/app/assets/data.json` para o
 - [x] Estados de hover em todos elementos
 - [x] Componentização dos elementos
 - [ ] Criação de mais páginas
+- [ ] Criação de subcomponentes das páginas
 
 ## Disclaimer
 
