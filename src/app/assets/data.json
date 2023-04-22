@@ -1,32 +1,54 @@
 {
-  "user": "Ana Silva",
-  "profilepic": "/face.png",
-  "userplaylists": [
-    { "name": "Ectastic Rock" },
-    { "name": "Manhã Relax" },
-    { "name": "Oneiri Station: Cinematic Sci-Fi Synthwave" },
-    { "name": "Atmospheric Calm" },
-    { "name": "Sleep Piano Music" },
-    { "name": "Vocal Synthwave Retrowave" },
-    { "name": "Peaceful Guitar" },
-    { "name": "System Of A Down - Discography" },
-    { "name": "Guitar Hero 6 - Warriors of Rock" },
-    { "name": "Ambition's Lofi Hiphop Playlist" },
-    { "name": "Atmospheric Calm" },
-    { "name": "Acoustic Covers" }
-  ],
-  "playlists": [
-    { "name": "Neon Run", "coverurl": "/capa1.png", "artists": "Nightwave, Neon Rebel"},
-    { "name": "Future Cities", "coverurl": "/capa2.png", "artists": "Cyber Dreamscape, Synthetixx" },
-    { "name": "Overworld", "coverurl": "/capa3.png", "artists": "Retro Futurewave, Electric Horizon" },
-    { "name": "Long Road", "coverurl": "/capa4.png", "artists": "The Wildwood Travelers, Moonshine Serenade" },
-    { "name": "Far Away", "coverurl": "/capa5.png", "artists": "Riverstone Ramblers, Hollow Oak Hymnals"  },
-    { "name": "Distant Days", "coverurl": "/capa6.png", "artists": "Hilltop Harvesters, Rustic Roadsides" }
-  ],
-  "playing": {
-    "song": "retrofuture",
-    "artist": "Nightwave",
-    "currentTime": "0:36",
-    "totalTime": "3:49"
+  "user": {
+    "name": "Ana Silva",
+    "profilepic": "/face.png",
+    "userplaylists": [
+      { "name": "Ectastic Rock" },
+      { "name": "Manhã Relax" },
+      { "name": "Oneiri Station: Cinematic Sci-Fi Synthwave" },
+      { "name": "Atmospheric Calm" },
+      { "name": "Sleep Piano Music" },
+      { "name": "Vocal Synthwave Retrowave" },
+      { "name": "Peaceful Guitar" },
+      { "name": "System Of A Down - Discography" },
+      { "name": "Guitar Hero 6 - Warriors of Rock" },
+      { "name": "Ambition's Lofi Hiphop Playlist" },
+      { "name": "Atmospheric Calm" },
+      { "name": "Acoustic Covers" }
+    ],
+    "playlists": [
+      { "name": "Neon Run", "coverurl": "/capa1.png", "artists": "Nightwave, Neon Rebel" },
+      {
+        "name": "Future Cities",
+        "coverurl": "/capa2.png",
+        "artists": "Cyber Dreamscape, Synthetixx"
+      },
+      {
+        "name": "Overworld",
+        "coverurl": "/capa3.png",
+        "artists": "Retro Futurewave, Electric Horizon"
+      },
+      {
+        "name": "Long Road",
+        "coverurl": "/capa4.png",
+        "artists": "The Wildwood Travelers, Moonshine Serenade"
+      },
+      {
+        "name": "Far Away",
+        "coverurl": "/capa5.png",
+        "artists": "Riverstone Ramblers, Hollow Oak Hymnals"
+      },
+      {
+        "name": "Distant Days",
+        "coverurl": "/capa6.png",
+        "artists": "Hilltop Harvesters, Rustic Roadsides"
+      }
+    ],
+    "playing": {
+      "song": "retrofuture",
+      "artist": "Nightwave",
+      "currentTime": "0:36",
+      "totalTime": "3:49"
+    }
   }
 }

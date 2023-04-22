@@ -35,7 +35,7 @@ export default function Home() {
             </a>
           </nav>
           <nav className='mt-10 pt-10 border-t border-zinc-1040'>
-            {data.userplaylists.map((item, index) => {
+            {data.user.userplaylists.map((item, index) => {
               return (
                 <div
                   className='text-sm truncate mt-3 text-zinc-400 hover:text-zinc-50 transition-all cursor-default'
@@ -61,14 +61,14 @@ export default function Home() {
                 <i className='mdi mdi-account-group'></i>
               </button>
               <button className='bg-black/50 rounded-full w-8 h-8 flex items-center justify-center overflow-hidden'>
-                <Image src={data.profilepic} alt={data.user} width={32} height={32} className=''></Image>
+                <Image src={data.user.profilepic} alt={data.user.name} width={32} height={32} className=''></Image>
               </button>
             </div>
           </div>
 
           <h1 className='font-bold text-3xl mt-9'>Boa noite</h1>
           <div className='grid grid-cols-3 gap-4 mt-4'>
-            {data.playlists.map((item, index) => {
+            {data.user.playlists.map((item, index) => {
               return (
                 <div
                   key={index}
@@ -82,9 +82,9 @@ export default function Home() {
               );
             })}
           </div>
-          <h1 className='font-bold text-2xl mt-10'>Feito para {data.user}</h1>
+          <h1 className='font-bold text-2xl mt-10'>Feito para {data.user.name}</h1>
           <div className={`grid grid-cols-4 gap-4 mt-4`}>
-            {data.playlists.map((item, index) => {
+            {data.user.playlists.map((item, index) => {
               if (index < 4) {
                 return (
                   <div
@@ -96,7 +96,7 @@ export default function Home() {
                         src={item.coverurl}
                         width={imgSize}
                         height={imgSize}
-                        alt='album cover'
+                        alt={`Capa do álbum ${item.name}`}
                       />
                       <button className='absolute bottom-0 right-2 rounded-full bg-green-500 w-10 h-10 opacity-0 group-hover:opacity-100 group-hover:-translate-y-3 transition-all'>
                         <i className='mdi mdi-play text-2xl text-black'></i>
@@ -115,15 +115,15 @@ export default function Home() {
         <div className='flex items-center gap-2'>
           <Image
             className='w-full rounded'
-            src={data.playlists[0].coverurl}
+            src={data.user.playlists[0].coverurl}
             width={imgSize - 12}
             height={imgSize}
             alt='album cover'
           />
           <div className='flex flex-col gap-1 text-sm '>
-            <strong className='font-semibold cursor-pointer hover:underline'>{data.playing.song}</strong>
+            <strong className='font-semibold cursor-pointer hover:underline'>{data.user.playing.song}</strong>
             <span className='font-light text-zinc-300 cursor-pointer hover:underline'>
-              {data.playing.artist}
+              {data.user.playing.artist}
             </span>
           </div>
         </div>
@@ -136,13 +136,13 @@ export default function Home() {
             <i className='mdi mdi-repeat hover:text-zinc-300 transition-all'></i>
           </div>
           <div className='flex items-center gap-2'>
-            <span className='text-xs text-zinc-400'>{data.playing.currentTime}</span>
+            <span className='text-xs text-zinc-400'>{data.user.playing.currentTime}</span>
             <div className='h-1 rounded-full w-96 bg-zinc-600 group'>
               <div className='bg-zinc-200 w-10 h-1 rounded-full group-hover:bg-green-500 flex items-center justify-end'>
                 <div className='rounded-full bg-zinc-50 w-3 h-3 invisible group-hover:visible'></div>
               </div>
             </div>
-            <span className='text-xs text-zinc-400'>{data.playing.totalTime}</span>
+            <span className='text-xs text-zinc-400'>{data.user.playing.totalTime}</span>
           </div>
         </div>
         <div className='flex items-center gap-3 text-xl text-zinc-400'>
