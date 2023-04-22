@@ -16,7 +16,7 @@ Para alterar os nomes, basta alterar o arquivo `src/app/assets/data.json` para o
 ## Screenshots
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img src="public/screen1.png" width="800px"/>
+  <img src="public/screenshot.png" width="800px"/>
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
