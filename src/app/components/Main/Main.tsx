@@ -5,7 +5,7 @@ export default function Main({user}:{user: User}) {
   const imgSize = 76;
 
   return (
-    <main className='flex-1 p-6 bg-gradient-to-b from-blue-900 from-0% to-zinc-900 to-20%'>
+    <main className='flex-1 m-2 ml-0 mb-0 rounded p-6 bg-gradient-to-b from-blue-900 from-0% to-zinc-900 to-20%'>
           <div className='flex items-center gap-3 justify-between'>
             <div className="flex items-center gap-2">
               <button className='bg-black/50 rounded-full w-8 h-8 flex items-center justify-center'>

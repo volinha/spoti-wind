@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className='h-screen flex flex-col'>
+    <div className='h-screen flex flex-col bg-zinc-950 overflow-y-hidden'>
       <div className='flex flex-1'>
         <Sidebar user={data}/>
         <Main user={data} />

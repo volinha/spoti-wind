@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer({ playing } : { playing: CurrentlyPlaying }) {
   const imgSize = 76;
   return (
-    <footer className='bg-zinc-900 border-t border-zinc-700 p-6 max-h-min flex items-center justify-between'>
+    <footer className='bg-zinc-950 p-6 w-full z-10 max-h-min flex items-center justify-between'>
         <div className='flex items-center gap-2'>
           <Image
             className='w-full rounded'
@@ -13,7 +13,7 @@ export default function Footer({ playing } : { playing: CurrentlyPlaying }) {
             height={imgSize}
             alt='album cover'
           />
-          <div className='flex flex-col gap-1 text-sm '>
+          <div className='flex flex-col gap-1 text-sm'>
             <strong className='font-semibold cursor-pointer hover:underline'>{playing.song}</strong>
             <span className='font-light text-zinc-300 cursor-pointer hover:underline'>
               {playing.artist}

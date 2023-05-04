@@ -4,6 +4,7 @@ export interface User {
     userplaylists: string[];
     playlists: Playlist[];
     playing: CurrentlyPlaying;
+    tags: string[];
 }
 
 export interface Playlist {

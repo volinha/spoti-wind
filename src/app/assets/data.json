@@ -10,10 +10,7 @@
       "Vocal Synthwave Retrowave",
       "Peaceful Guitar",
       "System Of A Down - Discography",
-      "Guitar Hero 6 - Warriors of Rock",
-      "Ambition's Lofi Hiphop Playlist",
-      "Atmospheric Calm",
-      "Acoustic Covers"
+      "Guitar Hero 6 - Warriors of Rock"
     ],
     "playlists": [
       { 
@@ -53,5 +50,8 @@
       "currentTime": "0:36",
       "totalTime": "3:49",
       "coverurl": "/capa1.png"
-    }
+    },
+    "tags": [
+      "Playlists", "Podcasts e programas", "Álbuns", "Artistas", "Baixados"
+    ]
   }
