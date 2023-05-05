@@ -1,57 +1,75 @@
 {
-    "name": "Ana Silva",
-    "profilepic": "/face.png",
-    "userplaylists": [
-      "Ectastic Rock",
-      "Manhã Relax",
-      "Oneiri Station: Cinematic Sci-Fi Synthwave",
-      "Atmospheric Calm",
-      "Sleep Piano Music",
-      "Vocal Synthwave Retrowave",
-      "Peaceful Guitar",
-      "System Of A Down - Discography",
-      "Guitar Hero 6 - Warriors of Rock"
-    ],
-    "playlists": [
-      { 
-        "name": "Neon Run", 
-        "coverurl": "/capa1.png", 
-        "artists": "Nightwave, Neon Rebel" 
-      },
-      {
-        "name": "Future Cities",
-        "coverurl": "/capa2.png",
-        "artists": "Cyber Dreamscape, Synthetixx"
-      },
-      {
-        "name": "Overworld",
-        "coverurl": "/capa3.png",
-        "artists": "Retro Futurewave, Electric Horizon"
-      },
-      {
-        "name": "Long Road",
-        "coverurl": "/capa4.png",
-        "artists": "The Wildwood Travelers, Moonshine Serenade"
-      },
-      {
-        "name": "Far Away",
-        "coverurl": "/capa5.png",
-        "artists": "Riverstone Ramblers, Hollow Oak Hymnals"
-      },
-      {
-        "name": "Distant Days",
-        "coverurl": "/capa6.png",
-        "artists": "Hilltop Harvesters, Rustic Roadsides"
-      }
-    ],
-    "playing": {
-      "song": "retrofuture",
-      "artist": "Nightwave",
-      "currentTime": "0:36",
-      "totalTime": "3:49",
-      "coverurl": "/capa1.png"
+  "name": "Ana Silva",
+  "profilepic": "/face.png",
+  "userplaylists": [
+    {
+      "name": "Ectastic Rock",
+      "type": "Playlist",
+      "owner": "Spoti-wind"
     },
-    "tags": [
-      "Playlists", "Podcasts e programas", "Álbuns", "Artistas", "Baixados"
-    ]
-  }
+    {
+      "name": "Manhã Relax",
+      "type": "Playlist",
+      "owner": "Spoti-wind"
+    },
+    {
+      "name": "Hypnotized",
+      "type": "Álbum",
+      "artist": "Down of a System"
+    },
+    {
+      "name": "Moonshine Serenade",
+      "type": "Artista"
+    },
+    {
+      "name": "Peaceful Guitar",
+      "type": "Playlist",
+      "owner": "Ana Silva"
+    },
+    {
+      "name": "Hero Guitar",
+      "type": "Playlist",
+      "owner": "Nightvision"
+    }
+  ],
+  "playlists": [
+    {
+      "name": "Neon Run",
+      "coverurl": "/capa1.png",
+      "artists": "Nightwave, Neon Rebel"
+    },
+    {
+      "name": "Future Cities",
+      "coverurl": "/capa2.png",
+      "artists": "Cyber Dreamscape, Synthetixx"
+    },
+    {
+      "name": "Overworld",
+      "coverurl": "/capa3.png",
+      "artists": "Retro Futurewave, Electric Horizon"
+    },
+    {
+      "name": "Long Road",
+      "coverurl": "/capa4.png",
+      "artists": "The Wildwood Travelers, Moonshine Serenade"
+    },
+    {
+      "name": "Far Away",
+      "coverurl": "/capa5.png",
+      "artists": "Riverstone Ramblers, Hollow Oak Hymnals"
+    },
+    {
+      "name": "Distant Days",
+      "coverurl": "/capa6.png",
+      "artists": "Hilltop Harvesters, Rustic Roadsides"
+    }
+  ],
+  "playing": {
+    "song": "retrofuture",
+    "artist": "Nightwave",
+    "currentTime": "0:36",
+    "totalTime": "3:49",
+    "coverurl": "/capa1.png"
+  },
+  "tags": ["Playlists", "Podcasts e programas", "Álbuns", "Artistas", "Baixados"]
+}

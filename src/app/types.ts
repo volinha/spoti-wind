@@ -1,7 +1,7 @@
 export interface User {
     name: string;
     profilepic: string;
-    userplaylists: string[];
+    userplaylists: UserPlaylist[];
     playlists: Playlist[];
     playing: CurrentlyPlaying;
     tags: string[];
@@ -19,4 +19,12 @@ export interface CurrentlyPlaying {
     currentTime: string;
     totalTime: string;
     coverurl: string;
+}
+
+interface UserPlaylist {
+    name: string;
+    type: string;
+    songs?: number;
+    artist?: string;
+    owner?: string;
 }
