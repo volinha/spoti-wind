@@ -5,31 +5,37 @@
     {
       "name": "Ectastic Rock",
       "type": "Playlist",
-      "owner": "Spoti-wind"
+      "owner": "Spoti-wind",
+      "imageurl": "/becca-tapert.jpg"
     },
     {
       "name": "Manhã Relax",
       "type": "Playlist",
-      "owner": "Spoti-wind"
+      "owner": "Spoti-wind",
+      "imageurl": "/jacek-dylag.jpg"
     },
     {
       "name": "Hypnotized",
       "type": "Álbum",
-      "artist": "Down of a System"
+      "artist": "Down of a System",
+      "imageurl": "/javier-allegue.jpg"
     },
     {
       "name": "Moonshine Serenade",
-      "type": "Artista"
+      "type": "Artista",
+      "imageurl": "/jay-antol.jpg"
     },
     {
       "name": "Peaceful Guitar",
       "type": "Playlist",
-      "owner": "Ana Silva"
+      "owner": "Ana Silva",
+      "imageurl": "/kyle-johnson.jpg"
     },
     {
       "name": "Hero Guitar",
       "type": "Playlist",
-      "owner": "Nightvision"
+      "owner": "Nightvision",
+      "imageurl": "/tirza-van-dijk.jpg"
     }
   ],
   "playlists": [

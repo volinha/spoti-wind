@@ -24,6 +24,7 @@ export interface CurrentlyPlaying {
 interface UserPlaylist {
     name: string;
     type: string;
+    imageurl: string;
     songs?: number;
     artist?: string;
     owner?: string;

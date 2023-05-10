@@ -1,8 +1,6 @@
 import { User } from "@/app/types";
 import Image from "next/image";
 
-import PlaylistDefault from "../../../../public/capa4.png";
-
 export default function Sidebar({ user }: { user: User }) {
   return (
     <aside>
@@ -53,9 +51,9 @@ export default function Sidebar({ user }: { user: User }) {
         {user.userplaylists.map((item, index) => {
           return (
             <div
-              className='flex items-center gap-2 p-1 text-sm truncate mt-3 text-zinc-300 cursor-pointer hover:bg-zinc-800 rounded transition-all cursor-default overflow-y-hidden'
+              className='flex items-center gap-2 p-1 text-sm truncate mt-3 text-zinc-300 cursor-pointer hover:bg-zinc-800 rounded transition-all overflow-y-hidden'
               key={index}>
-              <Image className='rounded' src={PlaylistDefault} width={48} height={32} alt='' />
+              <Image className='rounded aspect-square' src={item.imageurl} width={48} height={48} alt='' />
               <div className='flex flex-col '>
                 <div className='text-zinc-100 font-semibold'>{item.name}</div>
                 <div className='text-zinc-400'>

@@ -16,11 +16,8 @@ export default function Main({user}:{user: User}) {
               </button>
             </div>
             <div className="flex gap-3">
-            <button className='bg-black/50 rounded-full w-8 h-8 flex items-center justify-center'>
-                <i className='mdi mdi-account-group'></i>
-              </button>
               <button className='bg-black/50 rounded-full w-8 h-8 flex items-center justify-center overflow-hidden'>
-                <Image src={user.profilepic} alt={user.name} width={32} height={32} className=''></Image>
+                <Image src={user.profilepic} alt={user.name} width={24} height={32} className='rounded-full'></Image>
               </button>
             </div>
           </div>
